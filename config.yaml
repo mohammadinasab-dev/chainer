@@ -1,0 +1,17 @@
+database:
+  connection_url : ":5432"
+  connection_user: "postgres"
+  connection_pass: "pass"
+  connection_db  : "postgres"
+grpc:
+  address: "127.0.0.1"
+  port : "8081"
+  type : "tcp"
+rabbitmq:
+  connection_string : "amqp://guest:guest@192.168.101.204:5672/"
+  exchange_name : ""
+  exchange_type : ""
+  routing_key : "subscriptions"
+  qeue_name : "txNotifications"
+  consumer_count : "0"
+

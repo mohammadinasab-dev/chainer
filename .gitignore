@@ -1,0 +1,9 @@
+
+
+
+
+
+/bin
+/.vscode
+# for auto generation of api 
+# /server/grpc/dotnetGrpc

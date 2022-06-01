@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package chainerGrpc;
+
+option go_package = ".;pbs";
+
+
+
+service AddressGenerator {
+    rpc GetDepositAddress(DepositAddressReq) returns(DepositAddressRes){}
+}
+
+message DepositAddressReq { 
+  string Asset = 1 ; 
+  string Network = 2 ; 
+}
+
+message DepositAddressRes {
+  string Address =1 ; 
+}
+
+

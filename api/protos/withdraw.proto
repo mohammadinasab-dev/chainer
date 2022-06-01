@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package chainerGrpc;
+
+option go_package = ".;pbs";
+
+
+
+service Withdraw {
+    rpc Withdraw(WithdrawReq) returns(WithdrawRes){}
+}
+
+message WithdrawReq { 
+  string Asset = 1 ; 
+  string Network = 2 ; 
+  string Address =3 ; 
+  int64 Amount = 4 ;
+}
+
+message WithdrawRes {
+  string TXID = 1 ; 
+}
